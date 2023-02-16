@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" City class """
-
-import uuid
-from datetime import datetime
-from models import storage
+'''This module creates a User class'''
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """ City class """
+    '''Class for managing city objects'''
     state_id = ""
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        '''Initializes attributes for the city class'''
+        super().__init__(*args, **kwargs)
